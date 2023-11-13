@@ -58,14 +58,4 @@ const locationsArray = [
   "Wyoming",
 ];
 
-const statesAndTerritoriesSelect = document.querySelector("#statesAndTerritoriesSelect");
 
-function loadStates() {
-  for (const location of locationsArray) {
-    let option = document.createElement("option");
-    option.textContent = location;
-    option.value = location;
-    statesAndTerritoriesSelect.appendChild(option);
-  }
-}
-loadStates();

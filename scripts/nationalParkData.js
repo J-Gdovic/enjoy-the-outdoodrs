@@ -5784,47 +5784,4 @@ const nationalParksArray = [
   },
 ];
 
-//get elements into variables
-const nationalParkTable = document.querySelector("#nationalParkTable");
-const nationalParkTbody = document.querySelector("#nationalParkTbody");
 
-function loadNationalParkTable() {
-  for (const park of nationalParksArray) {
-    buildNationalParkTable(park);
-  }
-}
-
-function buildNationalParkTable(park) {
-  let tableRow = nationalParkTbody.insertRow(-1);
-
-  let td1 = tableRow.insertCell(0);
-  td1.innerText = park.LocationID;
-
-  let td2 = tableRow.insertCell(1);
-  td2.innerText = park.LocationName;
-
-  let td3 = tableRow.insertCell(2);
-  td3.innerText = park.Address;
-
-  let td4 = tableRow.insertCell(3);
-  td4.innerText = park.City;
-
-  let td5 = tableRow.insertCell(4);
-  td5.innerText = park.State;
-
-  let td6 = tableRow.insertCell(5);
-  td6.innerText = park.ZipCode;
-
-  let td7 = tableRow.insertCell(6);
-  td7.innerText = park.Phone;
-
-  let td8 = tableRow.insertCell(7);
-  td8.innerText = park.Fax;
-
-  let td9 = tableRow.insertCell(8);
-  td1.innerText = park.Latitude;
-
-  let td10 = tableRow.insertCell(9);
-  td10.innerText = park.Longitude;
-}
-loadNationalParkTable();
