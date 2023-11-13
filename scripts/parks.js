@@ -20,18 +20,13 @@ const nationalParkTable = document.querySelector("#nationalParkTable");
 const nationalParkTbody = document.querySelector("#nationalParkTbody");
 const parksDataTableDiv = document.querySelector("#parksDataTableDiv");
 
-//  function loadNationalParkTable() {
 
-//    for (const park of nationalParksArray) {
-//      buildNationalParkTable(park);
-//    }
-// }
 
 function buildNationalParkTable(parkState) {
   nationalParkTbody.innerHTML = "";
   for (const park of nationalParksArray) {
     
-    if (parkState == park.State) {
+    if (park.State == parkState) {
       let tableRow = nationalParkTbody.insertRow(-1);
 
       let td2 = tableRow.insertCell(0);
@@ -70,6 +65,6 @@ buildNationalParkTable(parkState);
 //wire up
 
 loadStates();
-//  loadNationalParkTable();
+
 
 statesAndTerritoriesSelect.onchange = changeLocation;
