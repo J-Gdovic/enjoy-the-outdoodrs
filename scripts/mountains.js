@@ -3,6 +3,7 @@
 
 const mountainSelect = document.querySelector("#mountainSelect");
 const mountainsTbody = document.querySelector("#mountainsTbody");
+const imageDiv = document.querySelector("#imageDiv");
 
 //functions
 
@@ -18,7 +19,9 @@ function loadMountainDropDown() {
 }
 
 function showMountainTable(mountainName) {
+
     for (const mountain of mountainsArray) {
+        
         if(mountain.name == mountainName){
             let tableRow = mountainsTbody.insertRow(-1);
 
@@ -33,6 +36,9 @@ function showMountainTable(mountainName) {
 
             let td5 = tableRow.insertCell(3);
             td5.innerText = mountain.effort;
+
+            let td6 = tableRow.insertCell(4);
+            td6.innerText = mountain.img;
         }
     }
 }

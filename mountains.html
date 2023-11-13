@@ -6,7 +6,13 @@
     <title>Mountains</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="parks.html">National Parks</a>
+        <a href="mountains.html">Mountains</a>
+      </nav>
+    </header>
     <main>
       <form>
         <label for="mountainSelect">Mountains</label>
@@ -14,24 +20,25 @@
   <option>Select...</option>
 </select>
       </form>
+      <div id="imageDiv">
       
+      </div>
       <table>
 <thead>
   <th>Mountain Name</th>
   <th>Description</th>
   <th>Elevation</th>
   <th>Difficulty</th>
+  <th>View</th>
 </thead>
 <tbody id="mountainsTbody"></tbody>
-
-
       </table>
 
 
 
 
 
-      </table>
+   
     </main>
     <footer></footer>
     <script src="scripts/mountainData.js"></script>
