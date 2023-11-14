@@ -20,12 +20,9 @@ const nationalParkTable = document.querySelector("#nationalParkTable");
 const nationalParkTbody = document.querySelector("#nationalParkTbody");
 const parksDataTableDiv = document.querySelector("#parksDataTableDiv");
 
-
-
 function buildNationalParkTable(parkState) {
   nationalParkTbody.innerHTML = "";
   for (const park of nationalParksArray) {
-    
     if (park.State == parkState) {
       let tableRow = nationalParkTbody.insertRow(-1);
 
@@ -51,20 +48,37 @@ function buildNationalParkTable(parkState) {
       if (park.Visit != undefined) {
         td8.innerText = park.Visit;
       }
-    
     }
   }
 }
 
-function changeLocation(){
+function changeLocation() {
   nationalParkTbody.innerHTML = "";
   const parkState = statesAndTerritoriesSelect.value;
-buildNationalParkTable(parkState);
+  buildNationalParkTable(parkState);
 }
+// function for type of park
+const byTypeTbody = document.querySelector("#byTypeTbody");
+const typeSelect = document.querySelector("#typeSelect");
+//functions
+//function to load types of parks
+function loadByType() {
+  for (const type of parkTypesArray) {
+    let option = document.createElement("option");
+    option.value = type;
+    option.innerText = type;
+    typeSelect.appendChild(option);
+  }
+}
+// function for parks by type
+
+
+//function for by type table
 
 //wire up
 
 loadStates();
-
-
 statesAndTerritoriesSelect.onchange = changeLocation;
+
+loadByType();
+

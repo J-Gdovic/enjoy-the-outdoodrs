@@ -32,16 +32,18 @@
         <select name="byLocation" id="statesAndTerritoriesSelect">
             <option value="">By Location...</option>
           </select>
-
-
-         
-        
         </form>
       </div>
-    
-     
-      
-        <table id="nationalParkTable">
+      <div>
+        <form>
+        <label for="typeSelect">Type of Park</label>
+        <select name="byType" id="typeSelect">
+            <option value="">By Type...</option>
+          </select>
+        </form>
+      </div>
+       
+       <table id="nationalParkTable">
           <thead>
             <tr>
               <th>LocationName</th>
@@ -58,6 +60,26 @@
           </tbody>
         </table>
         <div id="parksDataTableDiv"></div>
+
+      </div>
+       
+      <table id="typeTable">
+         <thead>
+           <tr>
+             <th>LocationName</th>
+             <th>Adress</th>
+             <th>City</th>
+             <th>State</th>
+             <th>ZipCode</th>
+             <th>Phone</th>
+             <th>Website</th>
+           </tr>
+         </thead>
+         <tbody id="byTypeTbody">
+
+         </tbody>
+       </table>
+       <div id="byTypeDiv"></div>
     </main>
     <footer></footer>
     <script src="scripts/locationData.js"></script>
