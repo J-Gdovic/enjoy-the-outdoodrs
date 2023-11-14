@@ -1,0 +1,10 @@
+header{
+    background-color: rgb(150, 220, 150);
+    padding: 1.5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
