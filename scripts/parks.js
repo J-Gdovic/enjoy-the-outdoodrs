@@ -3,7 +3,6 @@
 //States drop down
 
 const statesAndTerritoriesSelect = document.querySelector("#statesAndTerritoriesSelect");
-const parkTypeSelect = document.querySelector("#parkTypeSelect");
 
 function loadStates() {
   for (const location of locationsArray) {
@@ -75,8 +74,8 @@ function loadByType() {
 
 function buildNationalParkTableByType(parkType) {
   nationalParkTbody.innerHTML = "";
-  for (const park of parkTypesArray) {
-    if (park.LocationName.indexOf(parkType) != -1) {
+  for (const park of nationalParksArray) {
+    if (park.LocationName.indexOf(parkType) !== -1) {
       let tableRow = nationalParkTbody.insertRow(-1);
 
       let td2 = tableRow.insertCell(0);
@@ -109,6 +108,7 @@ function changeType() {
   nationalParkTbody.innerHTML = "";
   const parkType = typeSelect.value;
   buildNationalParkTableByType(parkType);
+  console.log("change type working");
 }
 
 //wire up
