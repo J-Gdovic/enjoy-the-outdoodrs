@@ -14,6 +14,21 @@ function loadStates() {
   }
 }
 
+// function for type of park drop down
+const byTypeTbody = document.querySelector("#byTypeTbody");
+const typeSelect = document.querySelector("#typeSelect");
+//functions
+//function to load types of parks
+function loadByType() {
+  for (const type of parkTypesArray) {
+    let option = document.createElement("option");
+    option.value = type;
+    option.innerText = type;
+    typeSelect.appendChild(option);
+  }
+}
+
+
 // Parks table
 
 const nationalParkTable = document.querySelector("#nationalParkTable");
@@ -57,23 +72,13 @@ function changeLocation() {
   const parkState = statesAndTerritoriesSelect.value;
   buildNationalParkTable(parkState);
 }
-// function for type of park
-const byTypeTbody = document.querySelector("#byTypeTbody");
-const typeSelect = document.querySelector("#typeSelect");
-//functions
-//function to load types of parks
-function loadByType() {
-  for (const type of parkTypesArray) {
-    let option = document.createElement("option");
-    option.value = type;
-    option.innerText = type;
-    typeSelect.appendChild(option);
-  }
-}
-// function for parks by type
 
+// function changeType() {
+//   nationalParkTbody.innerHTML = "";
+//   const parkState = typeSelect.value;
+//   buildNationalParkTable(parkState);
+// }
 
-//function for by type table
 
 //wire up
 
@@ -81,4 +86,4 @@ loadStates();
 statesAndTerritoriesSelect.onchange = changeLocation;
 
 loadByType();
-
+typeSelect.onchange = changeType;
