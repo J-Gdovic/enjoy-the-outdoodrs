@@ -17,7 +17,7 @@ function loadStates() {
 
 const nationalParkTable = document.querySelector("#nationalParkTable");
 const nationalParkTbody = document.querySelector("#nationalParkTbody");
-const parksDataTableDiv = document.querySelector("#parksDataTableDiv");
+
 
 function buildNationalParkTable(parkState) {
   nationalParkTbody.innerHTML = "";
