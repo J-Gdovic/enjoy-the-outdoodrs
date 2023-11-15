@@ -18,19 +18,12 @@ body{
 }
 
 
-/* #homePageImages{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-} */
+
 
 table{
-margin-top: 3rem;
-/* display: flex;
+margin-top: 6rem;
+display: flex;
 
-flex-direction: column;
-justify-content: center; */
 }
 
 
@@ -40,5 +33,21 @@ footer{
     flex-direction: column;
 }
 
+select{
+    margin-top: 3rem;
+}
+
+#typeLable{
+    margin-top: 3rem;
+}
+
+#statesAndTerritoriesLable{
+    margin-top: 3rem;
+}
+
+.form-check{
+    display: flex;
+    margin-top: 3rem;
+}
 
 
