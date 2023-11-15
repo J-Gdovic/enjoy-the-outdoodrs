@@ -11,10 +11,10 @@ nav{
 }
 
 body{
-    background-image: url("https://images.pexels.com/photos/2437299/pexels-photo-2437299.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600");
     background-size: 100%;
     background-repeat:repeat-y;
-    background-blend-mode:luminosity;
+    
 }
 
 
