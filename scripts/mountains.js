@@ -34,7 +34,8 @@ function showMountainTable(mountainName) {
       td5.innerText = mountain.effort;
 
       let td6 = tableRow.insertCell(4);
-      td6.innerHTML = mountain.img;
+      let path = "images/" + mountain.img;
+      td6.innerHTML = path;
     }
   }
 }
