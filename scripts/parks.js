@@ -119,47 +119,41 @@ const statesAndTerritoriesLable = document.querySelector("#statesAndTerritoriesL
 
 //functon for location radio
 
-byTypeRadio.checked = false;// why is this working?
+byTypeRadio.checked = false; // why is this working?
 
 function displayByLocation() {
   if (byLocationRadio.checked) {
-    nationalParkTable.style.display="block";
+    nationalParkTable.style.display = "block";
 
-    statesAndTerritoriesSelect.style.display="block";
-    nationalParkTbody.style.display="block";
-    statesAndTerritoriesLable.style.display="block";
+    statesAndTerritoriesSelect.style.display = "block";
+    nationalParkTbody.style.display = "block";
+    statesAndTerritoriesLable.style.display = "block";
 
-    typeSelect.style.display="none";
-    typeLable.style.display="none";
+    typeSelect.style.display = "none";
+    typeLable.style.display = "none";
   }
-
 }
-byLocationRadio.onclick = displayByLocation;
 
 function displayByType() {
   if (byTypeRadio.checked) {
-    nationalParkTable.style.display="block";
+    nationalParkTable.style.display = "block";
 
-    typeSelect.style.display="block";
-    nationalParkTbody.style.display="block";
-    typeLable.style.display="block";
+    typeSelect.style.display = "block";
+    nationalParkTbody.style.display = "block";
+    typeLable.style.display = "block";
 
-    statesAndTerritoriesSelect.style.display="none";
-    statesAndTerritoriesLable.style.display="none";
-
-    
+    statesAndTerritoriesSelect.style.display = "none";
+    statesAndTerritoriesLable.style.display = "none";
   }
- 
 }
-byTypeRadio.onclick = displayByType;
-
-
-
 
 //wire up
 
-loadStates();
-statesAndTerritoriesSelect.onchange = changeLocation;
+loadStates(); // to load states into drop down
+statesAndTerritoriesSelect.onchange = changeLocation; //show table for state selected
 
-loadByType();
-typeSelect.onchange = changeType;
+loadByType(); // to load type of parks into drop down
+typeSelect.onchange = changeType; // show table for type of park
+
+byLocationRadio.onclick = displayByLocation; // hides and shows location info
+byTypeRadio.onclick = displayByType; // hides and shows type info
