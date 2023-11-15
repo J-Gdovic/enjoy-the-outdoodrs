@@ -111,6 +111,51 @@ function changeType() {
   console.log("change type working");
 }
 
+//variables for radio buttons
+const byLocationRadio = document.querySelector("#byLocationRadio");
+const byTypeRadio = document.querySelector("#byTypeRadio");
+const typeLable = document.querySelector("#typeLable");
+const statesAndTerritoriesLable = document.querySelector("#statesAndTerritoriesLable");
+
+//functon for location radio
+
+byTypeRadio.checked = false;// why is this working?
+
+function displayByLocation() {
+  if (byLocationRadio.checked) {
+    nationalParkTable.style.display="block";
+
+    statesAndTerritoriesSelect.style.display="block";
+    nationalParkTbody.style.display="block";
+    statesAndTerritoriesLable.style.display="block";
+
+    typeSelect.style.display="none";
+    typeLable.style.display="none";
+  }
+
+}
+byLocationRadio.onclick = displayByLocation;
+
+function displayByType() {
+  if (byTypeRadio.checked) {
+    nationalParkTable.style.display="block";
+
+    typeSelect.style.display="block";
+    nationalParkTbody.style.display="block";
+    typeLable.style.display="block";
+
+    statesAndTerritoriesSelect.style.display="none";
+    statesAndTerritoriesLable.style.display="none";
+
+    
+  }
+ 
+}
+byTypeRadio.onclick = displayByType;
+
+
+
+
 //wire up
 
 loadStates();

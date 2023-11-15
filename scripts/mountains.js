@@ -4,7 +4,7 @@
 const mountainSelect = document.querySelector("#mountainSelect");
 const mountainsTbody = document.querySelector("#mountainsTbody");
 const mountainImageDiv = document.querySelector("#mountainImageDiv");
-
+const mountainTHead = document.querySelector("#mountainTHead")
 //functions
 
 function loadMountainDropDown() {
@@ -18,9 +18,13 @@ function loadMountainDropDown() {
 
 function showMountainTable(mountainName) {
   mountainImageDiv.innerHTML ="";
+  // mountainTHead.innerHTML = "";
   for (const mountain of mountainsArray) {
     if (mountain.name == mountainName) {
+
       mountainImageDiv.style.display="block";
+      
+
       let tableRow = mountainsTbody.insertRow(-1);
 
       let td1 = tableRow.insertCell(0);
