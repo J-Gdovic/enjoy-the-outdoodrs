@@ -98,7 +98,12 @@ function buildNationalParkTableByType(parkType) {
 
       let td8 = tableRow.insertCell(6);
       if (park.Visit != undefined) {
-        td8.innerText = park.Visit;
+        let link = document.createElement("a");
+        link.href = park.Visit;
+        link.target = "_blank";
+        link.innerText = "Visit";
+        td8.appendChild(link);
+        
       }
     }
   }
