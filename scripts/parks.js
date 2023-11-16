@@ -18,7 +18,6 @@ function loadStates() {
 const nationalParkTable = document.querySelector("#nationalParkTable");
 const nationalParkTbody = document.querySelector("#nationalParkTbody");
 
-
 function buildNationalParkTable(parkState) {
   nationalParkTbody.innerHTML = "";
   for (const park of nationalParksArray) {
@@ -50,7 +49,6 @@ function buildNationalParkTable(parkState) {
         link.target = "_blank";
         link.innerText = "Visit";
         td8.appendChild(link);
-        
       }
     }
   }
@@ -108,7 +106,6 @@ function buildNationalParkTableByType(parkType) {
         link.target = "_blank";
         link.innerText = "Visit";
         td8.appendChild(link);
-        
       }
     }
   }
@@ -126,7 +123,7 @@ const byLocationRadio = document.querySelector("#byLocationRadio");
 const byTypeRadio = document.querySelector("#byTypeRadio");
 const typeLable = document.querySelector("#typeLable");
 const statesAndTerritoriesLable = document.querySelector("#statesAndTerritoriesLable");
-const nationalParksTHead = document.querySelector("#nationalParksTHead")
+const nationalParksTHead = document.querySelector("#nationalParksTHead");
 //functon for location radio
 
 byTypeRadio.checked = false; // why is this working?
@@ -134,7 +131,6 @@ byTypeRadio.checked = false; // why is this working?
 function displayByLocation() {
   if (byLocationRadio.checked) {
     nationalParkTable.style.display = "block";
-    
 
     statesAndTerritoriesSelect.style.display = "block";
     nationalParkTbody.style.display = "block";
@@ -148,7 +144,6 @@ function displayByLocation() {
 function displayByType() {
   if (byTypeRadio.checked) {
     nationalParkTable.style.display = "block";
-   
 
     typeSelect.style.display = "block";
     nationalParkTbody.style.display = "block";

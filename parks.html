@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Parks</title>
-    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css" />
 
-    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/mystyles.css" />
   </head>
   <body>
     <header>
@@ -18,53 +18,46 @@
     </header>
     <main>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="byLocationRadio">
-        <label class="form-check-label" for="byLocationRadio">
-          By Location
-        </label>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="byLocationRadio" />
+        <label class="form-check-label" for="byLocationRadio"> By Location </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="byTypeRadio" checked>
-        <label class="form-check-label" for="byTypeRadio">
-          By Type
-        </label>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="byTypeRadio" checked />
+        <label class="form-check-label" for="byTypeRadio"> By Type </label>
       </div>
       <div>
         <form>
-        <label id="statesAndTerritoriesLable" for="statesAndTerritoriesSelect" style="display:none">States/Territories</label>
-        <select name="byLocation" id="statesAndTerritoriesSelect" style="display:none">
+          <label id="statesAndTerritoriesLable" for="statesAndTerritoriesSelect" style="display: none"
+            >States/Territories</label
+          >
+          <select name="byLocation" id="statesAndTerritoriesSelect" style="display: none">
             <option value="">By Location...</option>
           </select>
         </form>
       </div>
       <div>
         <form>
-        <label id="typeLable" for="typeSelect" style="display:none">Type of Park</label>
-        <select name="byType" id="typeSelect" style="display:none">
+          <label id="typeLable" for="typeSelect" style="display: none">Type of Park</label>
+          <select name="byType" id="typeSelect" style="display: none">
             <option value="">By Type...</option>
           </select>
         </form>
       </div>
-       
-       <table id="nationalParkTable">
-          <thead id="nationalParksTHead">
-            <tr>
-              <th>LocationName</th>
-              <th>Address</th>
-              <th>City</th>
-              <th>State</th>
-              <th>ZipCode</th>
-              <th>Phone</th>
-              <th>Website</th>
-            </tr>
-          </thead>
-          <tbody id="nationalParkTbody">
 
-          </tbody>
-        </table>
-     
-     
-
+      <table id="nationalParkTable">
+        <thead id="nationalParksTHead">
+          <tr>
+            <th>LocationName</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ZipCode</th>
+            <th>Phone</th>
+            <th>Website</th>
+          </tr>
+        </thead>
+        <tbody id="nationalParkTbody"></tbody>
+      </table>
     </main>
     <div class="container">
       <footer class="py-3 my-4">
@@ -81,4 +74,3 @@
     <script src="scripts/parks.js"></script>
   </body>
 </html>
-<a target="_blank" href="http://google.com">visit</a>
