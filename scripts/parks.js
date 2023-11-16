@@ -133,7 +133,7 @@ function displayByLocation() {
     nationalParkTable.style.display = "block";
 
     statesAndTerritoriesSelect.style.display = "block";
-    
+
     statesAndTerritoriesLable.style.display = "block";
 
     typeSelect.style.display = "none";
@@ -146,7 +146,7 @@ function displayByType() {
     nationalParkTable.style.display = "block";
 
     typeSelect.style.display = "block";
-    
+
     typeLable.style.display = "block";
 
     statesAndTerritoriesSelect.style.display = "none";
