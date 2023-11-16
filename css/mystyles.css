@@ -49,5 +49,6 @@ select {
   margin-top: 3rem;
 }
 
-#homePageImages {
+#homePageImages, img {
+  border-radius: 50%;
 }
