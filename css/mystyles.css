@@ -15,6 +15,9 @@ body {
   background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600");
   background-size: 100%;
   background-repeat: repeat-y;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* #homePageImages{
@@ -30,8 +33,7 @@ table {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
+margin-top: auto;
 }
 
 select {
